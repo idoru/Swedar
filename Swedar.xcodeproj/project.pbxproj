@@ -14,6 +14,7 @@
 		AE01CC441C52E12E002DB102 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE01CC431C52E12E002DB102 /* Assets.xcassets */; };
 		AE01CC471C52E12E002DB102 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE01CC451C52E12E002DB102 /* LaunchScreen.storyboard */; };
 		AE01CC521C52E12E002DB102 /* SwedarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE01CC511C52E12E002DB102 /* SwedarTests.swift */; };
+		AE48A1211C5A9DC500A3F57B /* AppDelegateSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE48A1201C5A9DC500A3F57B /* AppDelegateSpec.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		AE01CC4D1C52E12E002DB102 /* SwedarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwedarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE01CC511C52E12E002DB102 /* SwedarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwedarTests.swift; sourceTree = "<group>"; };
 		AE01CC531C52E12E002DB102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE48A1201C5A9DC500A3F57B /* AppDelegateSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegateSpec.mm; sourceTree = "<group>"; };
 		B69C607F7DE19BB144309AD3 /* Pods_SwedarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwedarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				AE01CC511C52E12E002DB102 /* SwedarTests.swift */,
+				AE48A1201C5A9DC500A3F57B /* AppDelegateSpec.mm */,
 				AE01CC531C52E12E002DB102 /* Info.plist */,
 			);
 			path = SwedarTests;
@@ -282,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE01CC521C52E12E002DB102 /* SwedarTests.swift in Sources */,
+				AE48A1211C5A9DC500A3F57B /* AppDelegateSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,10 +429,12 @@
 			baseConfigurationReference = 540EF19A8584985CC52982A4 /* Pods-SwedarTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				HEADER_SEARCH_PATHS = $DERIVED_FILE_DIR/../../Swedar.build/DerivedSources;
 				INFOPLIST_FILE = SwedarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.pivotal.SwedarTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swedar.app/Swedar";
 			};
 			name = Debug;
@@ -438,6 +444,7 @@
 			baseConfigurationReference = 6F62021CAAC7F95DA1908125 /* Pods-SwedarTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				HEADER_SEARCH_PATHS = $DERIVED_FILE_DIR/../../Swedar.build/DerivedSources;
 				INFOPLIST_FILE = SwedarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.pivotal.SwedarTests;
