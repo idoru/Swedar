@@ -1,5 +1,6 @@
 import Cedar
 import Nimble
+
 @testable import Swedar
 
 class AppDelegateSpec: CDRSpec {
@@ -15,9 +16,9 @@ class AppDelegateSpec: CDRSpec {
                     delegate.application(application, didFinishLaunchingWithOptions: nil)
                 }
                 
-                it("displays a FooBarViewController") {
-                    expect(delegate.window?.rootViewController).to(beAKindOf(UIViewController))
-                }
+                it("displays a ColorPaletteViewController", {
+                    expect(delegate.window?.rootViewController).to(beAKindOf(ColorPaletteViewController))
+                })
                 
                 it("should make the window the key window") {
                     expect(delegate.window?.keyWindow).to(beTruthy())

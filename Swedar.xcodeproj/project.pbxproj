@@ -15,6 +15,7 @@
 		AE01CC471C52E12E002DB102 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE01CC451C52E12E002DB102 /* LaunchScreen.storyboard */; };
 		AE01CC521C52E12E002DB102 /* SwedarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE01CC511C52E12E002DB102 /* SwedarTests.swift */; };
 		AE48A1211C5A9DC500A3F57B /* AppDelegateSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE48A1201C5A9DC500A3F57B /* AppDelegateSpec.mm */; };
+		AE0A61E31C52EA8000B0C849 /* ColorPaletteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A61E21C52EA8000B0C849 /* ColorPaletteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		AE01CC511C52E12E002DB102 /* SwedarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwedarTests.swift; sourceTree = "<group>"; };
 		AE01CC531C52E12E002DB102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE48A1201C5A9DC500A3F57B /* AppDelegateSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegateSpec.mm; sourceTree = "<group>"; };
+		AE0A61E21C52EA8000B0C849 /* ColorPaletteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPaletteViewController.swift; sourceTree = "<group>"; };
 		B69C607F7DE19BB144309AD3 /* Pods_SwedarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwedarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -109,6 +111,7 @@
 				AE01CC431C52E12E002DB102 /* Assets.xcassets */,
 				AE01CC451C52E12E002DB102 /* LaunchScreen.storyboard */,
 				AE01CC481C52E12E002DB102 /* Info.plist */,
+				AE0A61E21C52EA8000B0C849 /* ColorPaletteViewController.swift */,
 			);
 			path = Swedar;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE01CC3F1C52E12E002DB102 /* ViewController.swift in Sources */,
+				AE0A61E31C52EA8000B0C849 /* ColorPaletteViewController.swift in Sources */,
 				AE01CC3D1C52E12E002DB102 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
