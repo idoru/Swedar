@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '0DD458245B521CB55D549A30'
+               BlueprintIdentifier = '59F16F044AF8B4413555DF9E'
                BlueprintName = 'Cedar'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Cedar.framework'>

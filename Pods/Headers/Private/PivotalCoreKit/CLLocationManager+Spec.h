@@ -1,0 +1,1 @@
+../../../PivotalCoreKit/CoreLocation/SpecHelper/Extensions/CLLocationManager+Spec.h

@@ -1,0 +1,1 @@
+../../../PivotalCoreKit/UIKit/SpecHelper/Stubs/UIGestureRecognizer+Spec.h

@@ -1,0 +1,1 @@
+../../../PivotalCoreKit/UIKit/SpecHelper/Support/PCKMethodRedirector.h

@@ -11,5 +11,6 @@ end
 target 'SwedarTests' do
   pod "Cedar", git: "https://github.com/pivotal/cedar"
   pod "Nimble", git: "https://github.com/Quick/Nimble"
+  pod "PivotalCoreKit/Development", git: "https://github.com/pivotal/PivotalCoreKit"
 end
 

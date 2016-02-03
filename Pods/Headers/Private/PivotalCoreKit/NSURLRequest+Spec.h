@@ -1,0 +1,1 @@
+../../../PivotalCoreKit/Foundation/SpecHelper/Extensions/NSURLRequest+Spec.h

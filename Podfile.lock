@@ -1,16 +1,60 @@
 PODS:
   - Cedar (0.12.0)
   - Nimble (3.1.0)
+  - PivotalCoreKit/Core (0.3.2):
+    - PivotalCoreKit/Foundation/Core
+    - PivotalCoreKit/UIKit/Core
+  - PivotalCoreKit/CoreLocation/SpecHelper (0.3.2):
+    - PivotalCoreKit/CoreLocation/SpecHelper/Base (= 0.3.2)
+    - PivotalCoreKit/CoreLocation/SpecHelper/Extensions (= 0.3.2)
+  - PivotalCoreKit/CoreLocation/SpecHelper/Base (0.3.2)
+  - PivotalCoreKit/CoreLocation/SpecHelper/Extensions (0.3.2)
+  - PivotalCoreKit/Development (0.3.2):
+    - PivotalCoreKit/Core
+    - PivotalCoreKit/CoreLocation/SpecHelper
+    - PivotalCoreKit/Foundation/SpecHelper
+    - PivotalCoreKit/UIKit/SpecHelper
+  - PivotalCoreKit/Foundation/Core (0.3.2)
+  - PivotalCoreKit/Foundation/SpecHelper (0.3.2):
+    - PivotalCoreKit/Foundation/SpecHelper/Extensions (= 0.3.2)
+    - PivotalCoreKit/Foundation/SpecHelper/Fakes (= 0.3.2)
+    - PivotalCoreKit/Foundation/SpecHelper/Fixtures (= 0.3.2)
+    - PivotalCoreKit/Foundation/SpecHelper/Helpers (= 0.3.2)
+  - PivotalCoreKit/Foundation/SpecHelper/Extensions (0.3.2):
+    - PivotalCoreKit/Foundation/SpecHelper/Fakes
+    - PivotalCoreKit/Foundation/SpecHelper/Helpers
+  - PivotalCoreKit/Foundation/SpecHelper/Fakes (0.3.2):
+    - PivotalCoreKit/Foundation/SpecHelper/Fixtures
+  - PivotalCoreKit/Foundation/SpecHelper/Fixtures (0.3.2)
+  - PivotalCoreKit/Foundation/SpecHelper/Helpers (0.3.2)
+  - PivotalCoreKit/UIKit/Core (0.3.2):
+    - PivotalCoreKit/UIKit/Core/Core-arc (= 0.3.2)
+  - PivotalCoreKit/UIKit/Core/Core-arc (0.3.2)
+  - PivotalCoreKit/UIKit/SpecHelper (0.3.2):
+    - PivotalCoreKit/UIKit/SpecHelper/Extensions (= 0.3.2)
+    - PivotalCoreKit/UIKit/SpecHelper/Stubs (= 0.3.2)
+    - PivotalCoreKit/UIKit/SpecHelper/Support (= 0.3.2)
+  - PivotalCoreKit/UIKit/SpecHelper/Extensions (0.3.2):
+    - PivotalCoreKit/UIKit/SpecHelper/Support
+  - PivotalCoreKit/UIKit/SpecHelper/Stubs (0.3.2):
+    - PivotalCoreKit/UIKit/SpecHelper/Stubs/Stubs-noarc (= 0.3.2)
+    - PivotalCoreKit/UIKit/SpecHelper/Support
+  - PivotalCoreKit/UIKit/SpecHelper/Stubs/Stubs-noarc (0.3.2):
+    - PivotalCoreKit/UIKit/SpecHelper/Support
+  - PivotalCoreKit/UIKit/SpecHelper/Support (0.3.2)
 
 DEPENDENCIES:
   - Cedar (from `https://github.com/pivotal/cedar`)
   - Nimble (from `https://github.com/Quick/Nimble`)
+  - PivotalCoreKit/Development (from `https://github.com/pivotal/PivotalCoreKit`)
 
 EXTERNAL SOURCES:
   Cedar:
     :git: https://github.com/pivotal/cedar
   Nimble:
     :git: https://github.com/Quick/Nimble
+  PivotalCoreKit:
+    :git: https://github.com/pivotal/PivotalCoreKit
 
 CHECKOUT OPTIONS:
   Cedar:
@@ -19,9 +63,13 @@ CHECKOUT OPTIONS:
   Nimble:
     :commit: 5b8ff027c297443b0148f41e460bdfcb8517d471
     :git: https://github.com/Quick/Nimble
+  PivotalCoreKit:
+    :commit: 2d2f04fbded6b9703bd076debd742bb02cfec7ce
+    :git: https://github.com/pivotal/PivotalCoreKit
 
 SPEC CHECKSUMS:
   Cedar: ca163d6364991f39a4758fef49be3b95504ed0d0
   Nimble: eb2a9b164b9a3f16df6581c692a0bfced7d072a4
+  PivotalCoreKit: 6a850f72593da33bedd9b53fb03ac68b37c47e72
 
 COCOAPODS: 0.39.0

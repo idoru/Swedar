@@ -1,0 +1,1 @@
+../../../PivotalCoreKit/UIKit/SpecHelper/Stubs/iOS/UIAlertView+Spec.h

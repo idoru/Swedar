@@ -1,0 +1,1 @@
+../../../PivotalCoreKit/UIKit/SpecHelper/Stubs/UIViewController+Spec.h

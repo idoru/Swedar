@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PivotalCoreKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-SwedarTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>33FBC06BE16EE4AB1614B7FAFDFAC11F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>5489DD4BC3CDBAFA11A2283990EC4500</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A59030C5F47013C5DD74B630E93C192A</key>
+		<key>7C14A93E527704479D57E8B1744BF261</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F753A12419608459F7CB93517CFBFD6F</key>
+		<key>A59030C5F47013C5DD74B630E93C192A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

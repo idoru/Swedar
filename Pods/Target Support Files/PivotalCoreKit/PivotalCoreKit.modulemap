@@ -1,0 +1,6 @@
+framework module PivotalCoreKit {
+  umbrella header "PivotalCoreKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
