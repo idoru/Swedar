@@ -12,11 +12,16 @@ class ColorPickerViewController: UIViewController {
 
     var delegate:ColorPickerViewControllerDelegate?
 
+
+    override func viewDidLoad() {
+        self.view.backgroundColor = self.currentColor()
+    }
+
     @IBAction func addButtonTapped(sender: AnyObject) {
         self.delegate?.colorPickerViewControllerDidPickColor(self.currentColor())
     }
 
-    @IBAction func redSliderValueChanged(sender: AnyObject) {
+    @IBAction func sliderValueChanged(sender: AnyObject) {
         self.view.backgroundColor = self.currentColor()
     }
 

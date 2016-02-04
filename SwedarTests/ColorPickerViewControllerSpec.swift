@@ -27,6 +27,10 @@ class ColorPickerViewControllerSpec: CDRSpec {
             subject.delegate = fakeDelegate
         }
 
+        it("should have a initial color matching the color sliders") {
+            expect(subject.view.backgroundColor).to(equal(UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1.0)))
+        }
+
         describe("changing the sliders") {
             beforeEach {
                 subject.greenSlider.value = 0.0

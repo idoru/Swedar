@@ -30,7 +30,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44d-WE-kpp">
                                             <rect key="frame" x="4" y="14" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -74,23 +74,31 @@
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hQU-5w-ZWe" userLabel="Red Horizontal Slider">
                                         <rect key="frame" x="-2" y="0.0" width="584" height="31"/>
                                         <connections>
-                                            <action selector="redSliderValueChanged:" destination="ArT-iv-BMg" eventType="valueChanged" id="ID8-Go-72d"/>
+                                            <action selector="sliderValueChanged:" destination="ArT-iv-BMg" eventType="valueChanged" id="OTw-L5-om9"/>
                                         </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="GZR-q9-4bK" userLabel="Green Horizontal Slider">
                                         <rect key="frame" x="-2" y="50" width="584" height="31"/>
+                                        <connections>
+                                            <action selector="sliderValueChanged:" destination="ArT-iv-BMg" eventType="valueChanged" id="diC-Y1-c1L"/>
+                                        </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ttr-V8-l77" userLabel="Blue Horizontal Slider">
                                         <rect key="frame" x="-2" y="100" width="584" height="31"/>
+                                        <connections>
+                                            <action selector="sliderValueChanged:" destination="ArT-iv-BMg" eventType="valueChanged" id="gXa-12-my1"/>
+                                        </connections>
                                     </slider>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVS-6h-KFC">
-                                <rect key="frame" x="277" y="524" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVS-6h-KFC">
+                                <rect key="frame" x="266" y="556" width="69" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="TrH-Fw-P3g"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Add Color">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="addButtonTapped:" destination="ArT-iv-BMg" eventType="touchUpInside" id="z6G-rN-Kuf"/>
                                 </connections>
@@ -100,10 +108,9 @@
                         <constraints>
                             <constraint firstItem="F75-YQ-NE4" firstAttribute="top" secondItem="yVS-6h-KFC" secondAttribute="bottom" id="ExV-nT-AVF"/>
                             <constraint firstItem="LVa-x9-2IG" firstAttribute="leading" secondItem="QMo-Ss-7fQ" secondAttribute="leading" constant="10" id="LZQ-sa-VfN"/>
-                            <constraint firstItem="yVS-6h-KFC" firstAttribute="leading" secondItem="QMo-Ss-7fQ" secondAttribute="leading" constant="277" id="TNf-Ob-Kdf"/>
-                            <constraint firstAttribute="trailing" secondItem="yVS-6h-KFC" secondAttribute="trailing" id="VFt-F3-WWj"/>
                             <constraint firstItem="LVa-x9-2IG" firstAttribute="top" secondItem="zHt-gy-RUI" secondAttribute="bottom" constant="60" id="lMl-vd-Rag"/>
                             <constraint firstAttribute="trailing" secondItem="LVa-x9-2IG" secondAttribute="trailing" constant="10" id="rgT-rm-fa1"/>
+                            <constraint firstItem="yVS-6h-KFC" firstAttribute="centerX" secondItem="QMo-Ss-7fQ" secondAttribute="centerX" id="sOC-n6-cpW"/>
                         </constraints>
                     </view>
                     <connections>
