@@ -2,12 +2,12 @@ import Foundation
 import UIKit
 
 class CoreDataColorRepository: ColorRepository {
-    var colors: [Color] = [ ]
+    var colors: [UIColor] = [ ]
 
     func save() {
     }
 
-    func addColor(color: Color) {
+    func addColor(color: UIColor) {
         colors.append(color)
     }
 }

@@ -1,13 +1,7 @@
 import Foundation
 import UIKit
 
-protocol Color {
-    var red: NSNumber { get }
-    var green: NSNumber { get }
-    var blue: NSNumber { get }
-}
-
-extension UIColor: Color {
+extension UIColor {
     var red: NSNumber {
             var fRed : CGFloat = 0
             var fGreen : CGFloat = 0

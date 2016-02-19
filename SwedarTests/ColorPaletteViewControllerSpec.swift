@@ -5,12 +5,12 @@ import Nimble
 @testable import Swedar
 
 class FakeColorRepository: ColorRepository {
-    var colors: [Color] = [ UIColor.purpleColor(), UIColor.greenColor(), UIColor.orangeColor() ]
+    var colors: [UIColor] = [ UIColor.purpleColor(), UIColor.greenColor(), UIColor.orangeColor() ]
 
     func save() {
     }
 
-    func addColor(color: Color) {
+    func addColor(color: UIColor) {
         colors.append(color)
     }
 }

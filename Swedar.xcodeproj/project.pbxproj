@@ -9,15 +9,14 @@
 /* Begin PBXBuildFile section */
 		51880B8EA21E470AF6763ECF /* Pods_SwedarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69C607F7DE19BB144309AD3 /* Pods_SwedarTests.framework */; };
 		AE01CC3D1C52E12E002DB102 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE01CC3C1C52E12E002DB102 /* AppDelegate.swift */; };
-		AE01CC3F1C52E12E002DB102 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE01CC3E1C52E12E002DB102 /* ViewController.swift */; };
 		AE01CC441C52E12E002DB102 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE01CC431C52E12E002DB102 /* Assets.xcassets */; };
 		AE01CC471C52E12E002DB102 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE01CC451C52E12E002DB102 /* LaunchScreen.storyboard */; };
 		AE0A61E31C52EA8000B0C849 /* ColorPaletteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A61E21C52EA8000B0C849 /* ColorPaletteViewController.swift */; };
 		AE3180D31C62620000F575C2 /* ColorPaletteViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3180D21C62620000F575C2 /* ColorPaletteViewControllerSpec.swift */; };
 		AE3180D51C62658400F575C2 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3180D41C62658400F575C2 /* ColorPickerViewController.swift */; };
 		AE3180D71C6267DB00F575C2 /* ColorPickerViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3180D61C6267DB00F575C2 /* ColorPickerViewControllerSpec.swift */; };
+		AE73ACFA1C77C9D200087E2E /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73ACF91C77C9D200087E2E /* UIColor+RGB.swift */; };
 		AE95B22E1C6D222900F49D56 /* ColorPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE95B22D1C6D222900F49D56 /* ColorPickerViewController.xib */; };
-		AECDF9FD1C63C53E006A1526 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECDF9FB1C63C53E006A1526 /* Color.swift */; };
 		AECDFA2E1C63C7BA006A1526 /* AppDelegateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECDFA2D1C63C7BA006A1526 /* AppDelegateSpec.swift */; };
 		AECDFA321C63CB3F006A1526 /* ColorRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECDFA311C63CB3F006A1526 /* ColorRepository.swift */; };
 		AECDFA341C63CD5C006A1526 /* CoreDataColorRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECDFA331C63CD5C006A1526 /* CoreDataColorRepository.swift */; };
@@ -38,7 +37,6 @@
 		6F62021CAAC7F95DA1908125 /* Pods-SwedarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwedarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwedarTests/Pods-SwedarTests.release.xcconfig"; sourceTree = "<group>"; };
 		AE01CC391C52E12E002DB102 /* Swedar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swedar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE01CC3C1C52E12E002DB102 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AE01CC3E1C52E12E002DB102 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AE01CC431C52E12E002DB102 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE01CC461C52E12E002DB102 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE01CC481C52E12E002DB102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,8 +46,8 @@
 		AE3180D21C62620000F575C2 /* ColorPaletteViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPaletteViewControllerSpec.swift; sourceTree = "<group>"; };
 		AE3180D41C62658400F575C2 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
 		AE3180D61C6267DB00F575C2 /* ColorPickerViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerViewControllerSpec.swift; sourceTree = "<group>"; };
+		AE73ACF91C77C9D200087E2E /* UIColor+RGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB.swift"; sourceTree = "<group>"; };
 		AE95B22D1C6D222900F49D56 /* ColorPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorPickerViewController.xib; sourceTree = "<group>"; };
-		AECDF9FB1C63C53E006A1526 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		AECDFA2D1C63C7BA006A1526 /* AppDelegateSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateSpec.swift; sourceTree = "<group>"; };
 		AECDFA311C63CB3F006A1526 /* ColorRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorRepository.swift; sourceTree = "<group>"; };
 		AECDFA331C63CD5C006A1526 /* CoreDataColorRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataColorRepository.swift; sourceTree = "<group>"; };
@@ -116,13 +114,12 @@
 			isa = PBXGroup;
 			children = (
 				AE01CC3C1C52E12E002DB102 /* AppDelegate.swift */,
-				AE01CC3E1C52E12E002DB102 /* ViewController.swift */,
 				AE01CC431C52E12E002DB102 /* Assets.xcassets */,
 				AE01CC451C52E12E002DB102 /* LaunchScreen.storyboard */,
 				AE01CC481C52E12E002DB102 /* Info.plist */,
+				AE73ACF91C77C9D200087E2E /* UIColor+RGB.swift */,
 				AE0A61E21C52EA8000B0C849 /* ColorPaletteViewController.swift */,
 				AE3180D41C62658400F575C2 /* ColorPickerViewController.swift */,
-				AECDF9FB1C63C53E006A1526 /* Color.swift */,
 				AECDFA311C63CB3F006A1526 /* ColorRepository.swift */,
 				AECDFA331C63CD5C006A1526 /* CoreDataColorRepository.swift */,
 				AE95B22D1C6D222900F49D56 /* ColorPickerViewController.xib */,
@@ -293,12 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE01CC3F1C52E12E002DB102 /* ViewController.swift in Sources */,
 				AE0A61E31C52EA8000B0C849 /* ColorPaletteViewController.swift in Sources */,
+				AE73ACFA1C77C9D200087E2E /* UIColor+RGB.swift in Sources */,
 				AE3180D51C62658400F575C2 /* ColorPickerViewController.swift in Sources */,
 				AE01CC3D1C52E12E002DB102 /* AppDelegate.swift in Sources */,
 				AECDFA341C63CD5C006A1526 /* CoreDataColorRepository.swift in Sources */,
-				AECDF9FD1C63C53E006A1526 /* Color.swift in Sources */,
 				AECDFA321C63CB3F006A1526 /* ColorRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

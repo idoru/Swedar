@@ -1,7 +1,7 @@
-import Foundation
+import UIKit
 
 protocol ColorRepository {
     func save()
-    var colors: [Color] { get }
-    func addColor(color: Color)
+    var colors: [UIColor] { get }
+    func addColor(color: UIColor)
 }
