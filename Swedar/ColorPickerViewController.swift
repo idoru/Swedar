@@ -12,6 +12,14 @@ class ColorPickerViewController: UIViewController {
 
     var delegate:ColorPickerViewControllerDelegate?
 
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+
+    init(delegate: ColorPickerViewControllerDelegate) {
+        super.init(nibName: nil, bundle: nil)
+        self.delegate = delegate
+    }
 
     override func viewDidLoad() {
         self.view.backgroundColor = self.currentColor()

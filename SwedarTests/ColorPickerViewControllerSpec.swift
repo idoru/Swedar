@@ -18,7 +18,7 @@ class ColorPickerViewControllerSpec: CDRSpec {
 
         beforeEach {
             fakeDelegate = FakeColorPickerViewControllerDelegate()
-            subject = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("ColorPickerViewController") as! ColorPickerViewController
+            subject = ColorPickerViewController(delegate: fakeDelegate)
             let window = UIWindow(frame: UIScreen.mainScreen().bounds)
             window.rootViewController = subject
             window.makeKeyAndVisible()
