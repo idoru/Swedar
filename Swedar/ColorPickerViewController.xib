@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ColorPickerViewController" customModule="Swedar" customModuleProvider="target">
+            <connections>
+                <outlet property="addButton" destination="5Qb-BU-7se" id="JuT-E1-49U"/>
+                <outlet property="blueSlider" destination="YdC-Oq-Qjr" id="Tw9-ST-uZL"/>
+                <outlet property="greenSlider" destination="waN-9d-vdg" id="amX-pj-a5l"/>
+                <outlet property="redSlider" destination="tIc-gG-n8B" id="rTa-K6-WzV"/>
+                <outlet property="view" destination="iN0-l3-epB" id="W9f-D3-YYy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="CNc-D1-oAj">
+                    <rect key="frame" x="20" y="100" width="560" height="240"/>
+                    <subviews>
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="tIc-gG-n8B" userLabel="Red">
+                            <rect key="frame" x="-2" y="0.0" width="564" height="31"/>
+                            <connections>
+                                <action selector="sliderValueChanged:" destination="-1" eventType="valueChanged" id="8gk-vi-AMJ"/>
+                            </connections>
+                        </slider>
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="waN-9d-vdg" userLabel="Green">
+                            <rect key="frame" x="-2" y="70" width="564" height="31"/>
+                            <connections>
+                                <action selector="sliderValueChanged:" destination="-1" eventType="valueChanged" id="7LG-4y-fhu"/>
+                            </connections>
+                        </slider>
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="YdC-Oq-Qjr" userLabel="Blue">
+                            <rect key="frame" x="-2" y="140" width="564" height="31"/>
+                            <connections>
+                                <action selector="sliderValueChanged:" destination="-1" eventType="valueChanged" id="0w3-dH-Uhg"/>
+                            </connections>
+                        </slider>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Qb-BU-7se" userLabel="AddButton">
+                            <rect key="frame" x="0.0" y="210" width="560" height="30"/>
+                            <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="Add"/>
+                            <connections>
+                                <action selector="addButtonTapped:" destination="-1" eventType="touchUpInside" id="IkI-MZ-ek2"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="CNc-D1-oAj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="100" id="4Zn-6J-86W"/>
+                <constraint firstAttribute="trailing" secondItem="CNc-D1-oAj" secondAttribute="trailing" constant="20" id="7IC-3y-cOY"/>
+                <constraint firstItem="CNc-D1-oAj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="eH1-dA-YMS"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

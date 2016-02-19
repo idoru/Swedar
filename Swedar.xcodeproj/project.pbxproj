@@ -10,13 +10,13 @@
 		51880B8EA21E470AF6763ECF /* Pods_SwedarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69C607F7DE19BB144309AD3 /* Pods_SwedarTests.framework */; };
 		AE01CC3D1C52E12E002DB102 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE01CC3C1C52E12E002DB102 /* AppDelegate.swift */; };
 		AE01CC3F1C52E12E002DB102 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE01CC3E1C52E12E002DB102 /* ViewController.swift */; };
-		AE01CC421C52E12E002DB102 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE01CC401C52E12E002DB102 /* Main.storyboard */; };
 		AE01CC441C52E12E002DB102 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE01CC431C52E12E002DB102 /* Assets.xcassets */; };
 		AE01CC471C52E12E002DB102 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE01CC451C52E12E002DB102 /* LaunchScreen.storyboard */; };
 		AE0A61E31C52EA8000B0C849 /* ColorPaletteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A61E21C52EA8000B0C849 /* ColorPaletteViewController.swift */; };
 		AE3180D31C62620000F575C2 /* ColorPaletteViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3180D21C62620000F575C2 /* ColorPaletteViewControllerSpec.swift */; };
 		AE3180D51C62658400F575C2 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3180D41C62658400F575C2 /* ColorPickerViewController.swift */; };
 		AE3180D71C6267DB00F575C2 /* ColorPickerViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3180D61C6267DB00F575C2 /* ColorPickerViewControllerSpec.swift */; };
+		AE95B22E1C6D222900F49D56 /* ColorPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE95B22D1C6D222900F49D56 /* ColorPickerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +35,6 @@
 		AE01CC391C52E12E002DB102 /* Swedar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swedar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE01CC3C1C52E12E002DB102 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE01CC3E1C52E12E002DB102 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AE01CC411C52E12E002DB102 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE01CC431C52E12E002DB102 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE01CC461C52E12E002DB102 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE01CC481C52E12E002DB102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +44,7 @@
 		AE3180D21C62620000F575C2 /* ColorPaletteViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPaletteViewControllerSpec.swift; sourceTree = "<group>"; };
 		AE3180D41C62658400F575C2 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
 		AE3180D61C6267DB00F575C2 /* ColorPickerViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerViewControllerSpec.swift; sourceTree = "<group>"; };
+		AE95B22D1C6D222900F49D56 /* ColorPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorPickerViewController.xib; sourceTree = "<group>"; };
 		B69C607F7DE19BB144309AD3 /* Pods_SwedarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwedarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -109,12 +109,12 @@
 			children = (
 				AE01CC3C1C52E12E002DB102 /* AppDelegate.swift */,
 				AE01CC3E1C52E12E002DB102 /* ViewController.swift */,
-				AE01CC401C52E12E002DB102 /* Main.storyboard */,
 				AE01CC431C52E12E002DB102 /* Assets.xcassets */,
 				AE01CC451C52E12E002DB102 /* LaunchScreen.storyboard */,
 				AE01CC481C52E12E002DB102 /* Info.plist */,
 				AE0A61E21C52EA8000B0C849 /* ColorPaletteViewController.swift */,
 				AE3180D41C62658400F575C2 /* ColorPickerViewController.swift */,
+				AE95B22D1C6D222900F49D56 /* ColorPickerViewController.xib */,
 			);
 			path = Swedar;
 			sourceTree = "<group>";
@@ -213,9 +213,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE95B22E1C6D222900F49D56 /* ColorPickerViewController.xib in Resources */,
 				AE01CC471C52E12E002DB102 /* LaunchScreen.storyboard in Resources */,
 				AE01CC441C52E12E002DB102 /* Assets.xcassets in Resources */,
-				AE01CC421C52E12E002DB102 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,14 +308,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AE01CC401C52E12E002DB102 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AE01CC411C52E12E002DB102 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AE01CC451C52E12E002DB102 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
