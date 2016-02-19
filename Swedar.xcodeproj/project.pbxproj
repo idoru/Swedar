@@ -16,6 +16,7 @@
 		AE3180D51C62658400F575C2 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3180D41C62658400F575C2 /* ColorPickerViewController.swift */; };
 		AE3180D71C6267DB00F575C2 /* ColorPickerViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3180D61C6267DB00F575C2 /* ColorPickerViewControllerSpec.swift */; };
 		AE73ACFA1C77C9D200087E2E /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73ACF91C77C9D200087E2E /* UIColor+RGB.swift */; };
+		AE73ACFC1C77CB8900087E2E /* CoreDataColorRepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73ACFB1C77CB8900087E2E /* CoreDataColorRepositorySpec.swift */; };
 		AE95B22E1C6D222900F49D56 /* ColorPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE95B22D1C6D222900F49D56 /* ColorPickerViewController.xib */; };
 		AECDFA2E1C63C7BA006A1526 /* AppDelegateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECDFA2D1C63C7BA006A1526 /* AppDelegateSpec.swift */; };
 		AECDFA321C63CB3F006A1526 /* ColorRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECDFA311C63CB3F006A1526 /* ColorRepository.swift */; };
@@ -47,6 +48,7 @@
 		AE3180D41C62658400F575C2 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
 		AE3180D61C6267DB00F575C2 /* ColorPickerViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerViewControllerSpec.swift; sourceTree = "<group>"; };
 		AE73ACF91C77C9D200087E2E /* UIColor+RGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB.swift"; sourceTree = "<group>"; };
+		AE73ACFB1C77CB8900087E2E /* CoreDataColorRepositorySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataColorRepositorySpec.swift; sourceTree = "<group>"; };
 		AE95B22D1C6D222900F49D56 /* ColorPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorPickerViewController.xib; sourceTree = "<group>"; };
 		AECDFA2D1C63C7BA006A1526 /* AppDelegateSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateSpec.swift; sourceTree = "<group>"; };
 		AECDFA311C63CB3F006A1526 /* ColorRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorRepository.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 		AE01CC501C52E12E002DB102 /* SwedarTests */ = {
 			isa = PBXGroup;
 			children = (
+				AE73ACFB1C77CB8900087E2E /* CoreDataColorRepositorySpec.swift */,
 				AE01CC531C52E12E002DB102 /* Info.plist */,
 				AE3180D21C62620000F575C2 /* ColorPaletteViewControllerSpec.swift */,
 				AE3180D61C6267DB00F575C2 /* ColorPickerViewControllerSpec.swift */,
@@ -306,6 +309,7 @@
 				AECDFA2E1C63C7BA006A1526 /* AppDelegateSpec.swift in Sources */,
 				AE3180D31C62620000F575C2 /* ColorPaletteViewControllerSpec.swift in Sources */,
 				AE3180D71C6267DB00F575C2 /* ColorPickerViewControllerSpec.swift in Sources */,
+				AE73ACFC1C77CB8900087E2E /* CoreDataColorRepositorySpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

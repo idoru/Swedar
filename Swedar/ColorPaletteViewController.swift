@@ -4,12 +4,12 @@ class ColorPaletteViewController: UICollectionViewController, ColorPickerViewCon
     let colorRepository: ColorRepository
 
     required init?(coder aDecoder: NSCoder) {
-        self.colorRepository = CoreDataColorRepository()
+        self.colorRepository = CoreDataColorRepository.sharedInstance
         super.init(coder: aDecoder)
     }
 
     convenience init() {
-        self.init(colorRepository: CoreDataColorRepository())
+        self.init(colorRepository: CoreDataColorRepository.sharedInstance)
     }
 
     init(colorRepository: ColorRepository) {
@@ -30,8 +30,8 @@ class ColorPaletteViewController: UICollectionViewController, ColorPickerViewCon
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("kAddCellReuseIdentifier", forIndexPath: indexPath)
         if (indexPath.row == 0) {
             cell.backgroundColor = UIColor.magentaColor()
-        } else if let color = colorRepository.colors[indexPath.row - 1] as? UIColor {
-            cell.backgroundColor = color
+        } else {
+            cell.backgroundColor = colorRepository.colors[indexPath.row - 1]
         }
         return cell
     }
