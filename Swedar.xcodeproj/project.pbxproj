@@ -15,6 +15,12 @@
 		AE3180D31C62620000F575C2 /* ColorPaletteViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3180D21C62620000F575C2 /* ColorPaletteViewControllerSpec.swift */; };
 		AE3180D51C62658400F575C2 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3180D41C62658400F575C2 /* ColorPickerViewController.swift */; };
 		AE3180D71C6267DB00F575C2 /* ColorPickerViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3180D61C6267DB00F575C2 /* ColorPickerViewControllerSpec.swift */; };
+		AE3EDEBA1C93600D0019D201 /* Swedar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE3EDEB81C93600D0019D201 /* Swedar.xcdatamodeld */; };
+		AE3EDEBD1C93604E0019D201 /* Color+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3EDEBB1C93604E0019D201 /* Color+CoreDataProperties.swift */; };
+		AE3EDEBE1C93604E0019D201 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3EDEBC1C93604E0019D201 /* Color.swift */; };
+		AE3EDEC01C936DFF0019D201 /* SQLLiteCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3EDEBF1C936DFF0019D201 /* SQLLiteCoreDataManager.swift */; };
+		AE3EDEC21C936E320019D201 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3EDEC11C936E320019D201 /* CoreDataManager.swift */; };
+		AE3EDEC41C936ED20019D201 /* InMemoryCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3EDEC31C936ED20019D201 /* InMemoryCoreDataManager.swift */; };
 		AE73ACFA1C77C9D200087E2E /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73ACF91C77C9D200087E2E /* UIColor+RGB.swift */; };
 		AE73ACFC1C77CB8900087E2E /* CoreDataColorRepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73ACFB1C77CB8900087E2E /* CoreDataColorRepositorySpec.swift */; };
 		AE95B22E1C6D222900F49D56 /* ColorPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE95B22D1C6D222900F49D56 /* ColorPickerViewController.xib */; };
@@ -47,6 +53,12 @@
 		AE3180D21C62620000F575C2 /* ColorPaletteViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPaletteViewControllerSpec.swift; sourceTree = "<group>"; };
 		AE3180D41C62658400F575C2 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
 		AE3180D61C6267DB00F575C2 /* ColorPickerViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerViewControllerSpec.swift; sourceTree = "<group>"; };
+		AE3EDEB91C93600D0019D201 /* Swedar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Swedar.xcdatamodel; sourceTree = "<group>"; };
+		AE3EDEBB1C93604E0019D201 /* Color+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AE3EDEBC1C93604E0019D201 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		AE3EDEBF1C936DFF0019D201 /* SQLLiteCoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLLiteCoreDataManager.swift; sourceTree = "<group>"; };
+		AE3EDEC11C936E320019D201 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		AE3EDEC31C936ED20019D201 /* InMemoryCoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InMemoryCoreDataManager.swift; sourceTree = "<group>"; };
 		AE73ACF91C77C9D200087E2E /* UIColor+RGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB.swift"; sourceTree = "<group>"; };
 		AE73ACFB1C77CB8900087E2E /* CoreDataColorRepositorySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataColorRepositorySpec.swift; sourceTree = "<group>"; };
 		AE95B22D1C6D222900F49D56 /* ColorPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorPickerViewController.xib; sourceTree = "<group>"; };
@@ -115,6 +127,10 @@
 		AE01CC3B1C52E12E002DB102 /* Swedar */ = {
 			isa = PBXGroup;
 			children = (
+				AE3EDEBF1C936DFF0019D201 /* SQLLiteCoreDataManager.swift */,
+				AE3EDEBB1C93604E0019D201 /* Color+CoreDataProperties.swift */,
+				AE3EDEBC1C93604E0019D201 /* Color.swift */,
+				AE3EDEB81C93600D0019D201 /* Swedar.xcdatamodeld */,
 				AE01CC3C1C52E12E002DB102 /* AppDelegate.swift */,
 				AE01CC431C52E12E002DB102 /* Assets.xcassets */,
 				AE01CC451C52E12E002DB102 /* LaunchScreen.storyboard */,
@@ -125,6 +141,7 @@
 				AECDFA311C63CB3F006A1526 /* ColorRepository.swift */,
 				AECDFA331C63CD5C006A1526 /* CoreDataColorRepository.swift */,
 				AE95B22D1C6D222900F49D56 /* ColorPickerViewController.xib */,
+				AE3EDEC11C936E320019D201 /* CoreDataManager.swift */,
 			);
 			path = Swedar;
 			sourceTree = "<group>";
@@ -137,6 +154,7 @@
 				AE3180D21C62620000F575C2 /* ColorPaletteViewControllerSpec.swift */,
 				AE3180D61C6267DB00F575C2 /* ColorPickerViewControllerSpec.swift */,
 				AECDFA2D1C63C7BA006A1526 /* AppDelegateSpec.swift */,
+				AE3EDEC31C936ED20019D201 /* InMemoryCoreDataManager.swift */,
 			);
 			path = SwedarTests;
 			sourceTree = "<group>";
@@ -295,10 +313,15 @@
 			files = (
 				AE0A61E31C52EA8000B0C849 /* ColorPaletteViewController.swift in Sources */,
 				AE73ACFA1C77C9D200087E2E /* UIColor+RGB.swift in Sources */,
+				AE3EDEBA1C93600D0019D201 /* Swedar.xcdatamodeld in Sources */,
+				AE3EDEBD1C93604E0019D201 /* Color+CoreDataProperties.swift in Sources */,
 				AE3180D51C62658400F575C2 /* ColorPickerViewController.swift in Sources */,
 				AE01CC3D1C52E12E002DB102 /* AppDelegate.swift in Sources */,
 				AECDFA341C63CD5C006A1526 /* CoreDataColorRepository.swift in Sources */,
 				AECDFA321C63CB3F006A1526 /* ColorRepository.swift in Sources */,
+				AE3EDEC01C936DFF0019D201 /* SQLLiteCoreDataManager.swift in Sources */,
+				AE3EDEBE1C93604E0019D201 /* Color.swift in Sources */,
+				AE3EDEC21C936E320019D201 /* CoreDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AECDFA2E1C63C7BA006A1526 /* AppDelegateSpec.swift in Sources */,
+				AE3EDEC41C936ED20019D201 /* InMemoryCoreDataManager.swift in Sources */,
 				AE3180D31C62620000F575C2 /* ColorPaletteViewControllerSpec.swift in Sources */,
 				AE3180D71C6267DB00F575C2 /* ColorPickerViewControllerSpec.swift in Sources */,
 				AE73ACFC1C77CB8900087E2E /* CoreDataColorRepositorySpec.swift in Sources */,
@@ -500,6 +524,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AE3EDEB81C93600D0019D201 /* Swedar.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AE3EDEB91C93600D0019D201 /* Swedar.xcdatamodel */,
+			);
+			currentVersion = AE3EDEB91C93600D0019D201 /* Swedar.xcdatamodel */;
+			path = Swedar.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AE01CC311C52E12E002DB102 /* Project object */;
 }
