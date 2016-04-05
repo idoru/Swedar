@@ -19,7 +19,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Swedar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-SwedarTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Realm.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RealmSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,7 +42,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>33FBC06BE16EE4AB1614B7FAFDFAC11F</key>
+		<key>02DD417C117561BBD27E97B581C8A231</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4FA852B36637F5FBFB642C28D8B6C6BC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -37,12 +57,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>5FCDE3B8747CBC1C0732B1E7B6787D0A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>7C14A93E527704479D57E8B1744BF261</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A59030C5F47013C5DD74B630E93C192A</key>
+		<key>BF92D52BD336E1EEF86495C9756F4966</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CE8481DB6DB07E545885DFB193CC166D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

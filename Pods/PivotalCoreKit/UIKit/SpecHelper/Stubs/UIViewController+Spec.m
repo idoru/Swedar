@@ -80,8 +80,10 @@ static char PRESENTED_CONTROLLER_KEY;
         [self _pck_setPresentedViewController:nil];
     } else if (self.presentingViewController) {
         [self.presentingViewController dismissViewControllerAnimated:YES completion:completion];
+        return;
     } else if (self.navigationController) {
         [self.navigationController dismissViewControllerAnimated:YES completion:completion];
+        return;
     }
 
     if (completion) {
@@ -130,11 +132,13 @@ static char PRESENTED_CONTROLLER_KEY;
 
 - (void)pck_transitionFromViewController:(UIViewController *)fromViewController toViewController:(UIViewController *)toViewController duration:(NSTimeInterval)duration options:(UIViewAnimationOptions)options animations:(void (^)(void))animations completion:(void (^)(BOOL))completion {
 
-    [[self view] addSubview:toViewController.view];
+    [fromViewController.view.superview addSubview:toViewController.view];
 
     if (animations) {
         animations();
     }
+
+    [fromViewController.view removeFromSuperview];
 
     if (completion) {
         completion(YES);

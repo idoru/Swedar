@@ -1,4 +1,6 @@
 import Foundation
+
+#if _runtime(_ObjC)
 import Dispatch
 
 private let timeoutLeeway: UInt64 = NSEC_PER_MSEC
@@ -218,7 +220,7 @@ internal class AwaitPromiseBuilder<T> {
     /// - The async expectation raised an unexpected error (swift)
     ///
     /// The returned AwaitResult will NEVER be .Incomplete.
-    func wait(fnName: String = __FUNCTION__, file: FileString = __FILE__, line: UInt = __LINE__) -> AwaitResult<T> {
+    func wait(fnName: String = #function, file: FileString = #file, line: UInt = #line) -> AwaitResult<T> {
         waitLock.acquireWaitingLock(
             fnName,
             file: file,
@@ -336,7 +338,7 @@ internal func pollBlock(
     timeoutInterval: NSTimeInterval,
     file: FileString,
     line: UInt,
-    fnName: String = __FUNCTION__,
+    fnName: String = #function,
     expression: () throws -> Bool) -> AwaitResult<Bool> {
         let awaiter = NimbleEnvironment.activeInstance.awaiter
         let result = awaiter.poll(pollInterval) { () throws -> Bool? in
@@ -352,3 +354,5 @@ internal func pollBlock(
 
         return result
 }
+
+#endif

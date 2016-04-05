@@ -1,6 +1,6 @@
 {
   "name": "Cedar",
-  "version": "0.12.0",
+  "version": "0.13.1",
   "license": {
     "type": "MIT",
     "file": "MIT.LICENSE.txt"
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/pivotal/cedar.git",
-    "tag": "v0.12.0"
+    "tag": "v0.13.1"
   },
   "platforms": {
     "osx": "10.7",

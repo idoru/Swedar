@@ -1,6 +1,6 @@
 {
   "name": "PivotalCoreKit",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "license": {
     "type": "MIT",
     "file": "LICENSE.markdown"
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/pivotal/PivotalCoreKit.git",
-    "tag": "v0.3.2"
+    "tag": "v0.3.3"
   },
   "platforms": {
     "ios": "6.0",

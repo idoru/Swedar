@@ -1,52 +1,58 @@
 PODS:
-  - Cedar (0.12.0)
-  - Nimble (3.1.0)
-  - PivotalCoreKit/Core (0.3.2):
+  - Cedar (0.13.1)
+  - Nimble (3.2.0)
+  - PivotalCoreKit/Core (0.3.3):
     - PivotalCoreKit/Foundation/Core
     - PivotalCoreKit/UIKit/Core
-  - PivotalCoreKit/CoreLocation/SpecHelper (0.3.2):
-    - PivotalCoreKit/CoreLocation/SpecHelper/Base (= 0.3.2)
-    - PivotalCoreKit/CoreLocation/SpecHelper/Extensions (= 0.3.2)
-  - PivotalCoreKit/CoreLocation/SpecHelper/Base (0.3.2)
-  - PivotalCoreKit/CoreLocation/SpecHelper/Extensions (0.3.2)
-  - PivotalCoreKit/Development (0.3.2):
+  - PivotalCoreKit/CoreLocation/SpecHelper (0.3.3):
+    - PivotalCoreKit/CoreLocation/SpecHelper/Base (= 0.3.3)
+    - PivotalCoreKit/CoreLocation/SpecHelper/Extensions (= 0.3.3)
+  - PivotalCoreKit/CoreLocation/SpecHelper/Base (0.3.3)
+  - PivotalCoreKit/CoreLocation/SpecHelper/Extensions (0.3.3)
+  - PivotalCoreKit/Development (0.3.3):
     - PivotalCoreKit/Core
     - PivotalCoreKit/CoreLocation/SpecHelper
     - PivotalCoreKit/Foundation/SpecHelper
     - PivotalCoreKit/UIKit/SpecHelper
-  - PivotalCoreKit/Foundation/Core (0.3.2)
-  - PivotalCoreKit/Foundation/SpecHelper (0.3.2):
-    - PivotalCoreKit/Foundation/SpecHelper/Extensions (= 0.3.2)
-    - PivotalCoreKit/Foundation/SpecHelper/Fakes (= 0.3.2)
-    - PivotalCoreKit/Foundation/SpecHelper/Fixtures (= 0.3.2)
-    - PivotalCoreKit/Foundation/SpecHelper/Helpers (= 0.3.2)
-  - PivotalCoreKit/Foundation/SpecHelper/Extensions (0.3.2):
+  - PivotalCoreKit/Foundation/Core (0.3.3)
+  - PivotalCoreKit/Foundation/SpecHelper (0.3.3):
+    - PivotalCoreKit/Foundation/SpecHelper/Extensions (= 0.3.3)
+    - PivotalCoreKit/Foundation/SpecHelper/Fakes (= 0.3.3)
+    - PivotalCoreKit/Foundation/SpecHelper/Fixtures (= 0.3.3)
+    - PivotalCoreKit/Foundation/SpecHelper/Helpers (= 0.3.3)
+  - PivotalCoreKit/Foundation/SpecHelper/Extensions (0.3.3):
     - PivotalCoreKit/Foundation/SpecHelper/Fakes
     - PivotalCoreKit/Foundation/SpecHelper/Helpers
-  - PivotalCoreKit/Foundation/SpecHelper/Fakes (0.3.2):
+  - PivotalCoreKit/Foundation/SpecHelper/Fakes (0.3.3):
     - PivotalCoreKit/Foundation/SpecHelper/Fixtures
-  - PivotalCoreKit/Foundation/SpecHelper/Fixtures (0.3.2)
-  - PivotalCoreKit/Foundation/SpecHelper/Helpers (0.3.2)
-  - PivotalCoreKit/UIKit/Core (0.3.2):
-    - PivotalCoreKit/UIKit/Core/Core-arc (= 0.3.2)
-  - PivotalCoreKit/UIKit/Core/Core-arc (0.3.2)
-  - PivotalCoreKit/UIKit/SpecHelper (0.3.2):
-    - PivotalCoreKit/UIKit/SpecHelper/Extensions (= 0.3.2)
-    - PivotalCoreKit/UIKit/SpecHelper/Stubs (= 0.3.2)
-    - PivotalCoreKit/UIKit/SpecHelper/Support (= 0.3.2)
-  - PivotalCoreKit/UIKit/SpecHelper/Extensions (0.3.2):
+  - PivotalCoreKit/Foundation/SpecHelper/Fixtures (0.3.3)
+  - PivotalCoreKit/Foundation/SpecHelper/Helpers (0.3.3)
+  - PivotalCoreKit/UIKit/Core (0.3.3):
+    - PivotalCoreKit/UIKit/Core/Core-arc (= 0.3.3)
+  - PivotalCoreKit/UIKit/Core/Core-arc (0.3.3)
+  - PivotalCoreKit/UIKit/SpecHelper (0.3.3):
+    - PivotalCoreKit/UIKit/SpecHelper/Extensions (= 0.3.3)
+    - PivotalCoreKit/UIKit/SpecHelper/Stubs (= 0.3.3)
+    - PivotalCoreKit/UIKit/SpecHelper/Support (= 0.3.3)
+  - PivotalCoreKit/UIKit/SpecHelper/Extensions (0.3.3):
     - PivotalCoreKit/UIKit/SpecHelper/Support
-  - PivotalCoreKit/UIKit/SpecHelper/Stubs (0.3.2):
-    - PivotalCoreKit/UIKit/SpecHelper/Stubs/Stubs-noarc (= 0.3.2)
+  - PivotalCoreKit/UIKit/SpecHelper/Stubs (0.3.3):
+    - PivotalCoreKit/UIKit/SpecHelper/Stubs/Stubs-noarc (= 0.3.3)
     - PivotalCoreKit/UIKit/SpecHelper/Support
-  - PivotalCoreKit/UIKit/SpecHelper/Stubs/Stubs-noarc (0.3.2):
+  - PivotalCoreKit/UIKit/SpecHelper/Stubs/Stubs-noarc (0.3.3):
     - PivotalCoreKit/UIKit/SpecHelper/Support
-  - PivotalCoreKit/UIKit/SpecHelper/Support (0.3.2)
+  - PivotalCoreKit/UIKit/SpecHelper/Support (0.3.3)
+  - Realm (0.98.6):
+    - Realm/Headers (= 0.98.6)
+  - Realm/Headers (0.98.6)
+  - RealmSwift (0.98.6):
+    - Realm (= 0.98.6)
 
 DEPENDENCIES:
   - Cedar (from `https://github.com/pivotal/cedar`)
   - Nimble (from `https://github.com/Quick/Nimble`)
   - PivotalCoreKit/Development (from `https://github.com/pivotal/PivotalCoreKit`)
+  - RealmSwift
 
 EXTERNAL SOURCES:
   Cedar:
@@ -58,18 +64,20 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Cedar:
-    :commit: 5c273a9ead895053daa87767fac20ef0d21870d0
+    :commit: 7031c1cd39a5f93ceecf5f253799a607cbd16c0e
     :git: https://github.com/pivotal/cedar
   Nimble:
-    :commit: 5b8ff027c297443b0148f41e460bdfcb8517d471
+    :commit: d4cbf8d5b85933480e8b319f1aac63236fe789aa
     :git: https://github.com/Quick/Nimble
   PivotalCoreKit:
-    :commit: 2d2f04fbded6b9703bd076debd742bb02cfec7ce
+    :commit: 8acd46778fca811dfb4c2dd611f14b3fc3213d70
     :git: https://github.com/pivotal/PivotalCoreKit
 
 SPEC CHECKSUMS:
-  Cedar: ca163d6364991f39a4758fef49be3b95504ed0d0
-  Nimble: eb2a9b164b9a3f16df6581c692a0bfced7d072a4
-  PivotalCoreKit: 6a850f72593da33bedd9b53fb03ac68b37c47e72
+  Cedar: 66acf4cd946fa7cf6f0f0e3abdb97823e791def5
+  Nimble: 2a0cfc75e3d7e80a715a9fbe35f84f37a200b785
+  PivotalCoreKit: 29665b3432abddc9e5206c9c866468c1d9ee2d70
+  Realm: 44803f35418c5d89b27825a564247fcd190de37e
+  RealmSwift: c7239c52c83f8c43525a5269ba7be1694da33afc
 
 COCOAPODS: 0.39.0

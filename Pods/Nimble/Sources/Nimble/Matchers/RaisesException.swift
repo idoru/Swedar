@@ -1,5 +1,8 @@
 import Foundation
 
+// This matcher requires the Objective-C, and being built by Xcode rather than the Swift Package Manager 
+#if _runtime(_ObjC) && !SWIFT_PACKAGE
+
 /// A Nimble matcher that succeeds when the actual expression raises an
 /// exception with the specified name, reason, and/or userInfo.
 ///
@@ -176,3 +179,4 @@ extension NMBObjCMatcher {
         return NMBObjCRaiseExceptionMatcher(name: nil, reason: nil, userInfo: nil, block: nil)
     }
 }
+#endif

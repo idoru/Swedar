@@ -27,6 +27,7 @@
 		AEE2A2111C937CB1008FA5E5 /* ColorPaletteViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE2A20F1C937CB1008FA5E5 /* ColorPaletteViewControllerSpec.swift */; };
 		AEE2A2121C937CB1008FA5E5 /* ColorPickerViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE2A2101C937CB1008FA5E5 /* ColorPickerViewControllerSpec.swift */; };
 		AEE2A2171C937CF2008FA5E5 /* InMemoryCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE2A2161C937CF2008FA5E5 /* InMemoryCoreDataManager.swift */; };
+		EFB14E49445FC88B6A7FB6A9 /* Pods_Swedar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE1205C039A9220ECBE35AC /* Pods_Swedar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +42,10 @@
 
 /* Begin PBXFileReference section */
 		540EF19A8584985CC52982A4 /* Pods-SwedarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwedarTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwedarTests/Pods-SwedarTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5AE1205C039A9220ECBE35AC /* Pods_Swedar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swedar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F62021CAAC7F95DA1908125 /* Pods-SwedarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwedarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwedarTests/Pods-SwedarTests.release.xcconfig"; sourceTree = "<group>"; };
+		94EB94D371811AD287C2912B /* Pods-Swedar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swedar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swedar/Pods-Swedar.debug.xcconfig"; sourceTree = "<group>"; };
+		AB54EE43C8D1ACB6B33B8680 /* Pods-Swedar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swedar.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swedar/Pods-Swedar.release.xcconfig"; sourceTree = "<group>"; };
 		AE01CC391C52E12E002DB102 /* Swedar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swedar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE01CC3C1C52E12E002DB102 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE01CC431C52E12E002DB102 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFB14E49445FC88B6A7FB6A9 /* Pods_Swedar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +97,8 @@
 			children = (
 				540EF19A8584985CC52982A4 /* Pods-SwedarTests.debug.xcconfig */,
 				6F62021CAAC7F95DA1908125 /* Pods-SwedarTests.release.xcconfig */,
+				94EB94D371811AD287C2912B /* Pods-Swedar.debug.xcconfig */,
+				AB54EE43C8D1ACB6B33B8680 /* Pods-Swedar.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -100,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				B69C607F7DE19BB144309AD3 /* Pods_SwedarTests.framework */,
+				5AE1205C039A9220ECBE35AC /* Pods_Swedar.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -222,9 +230,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE01CC561C52E12E002DB102 /* Build configuration list for PBXNativeTarget "Swedar" */;
 			buildPhases = (
+				24F12DBAFCF32B0C332EFE9F /* Check Pods Manifest.lock */,
 				AE01CC351C52E12E002DB102 /* Sources */,
 				AE01CC361C52E12E002DB102 /* Frameworks */,
 				AE01CC371C52E12E002DB102 /* Resources */,
+				398E811A7D972674C94DD06E /* Embed Pods Frameworks */,
+				3661DBE43CC300694EA1E7B3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -315,6 +326,51 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		24F12DBAFCF32B0C332EFE9F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3661DBE43CC300694EA1E7B3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swedar/Pods-Swedar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		398E811A7D972674C94DD06E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swedar/Pods-Swedar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		83CEF9EC0C1C8620AEEC9697 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -500,6 +556,7 @@
 		};
 		AE01CC571C52E12E002DB102 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94EB94D371811AD287C2912B /* Pods-Swedar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Swedar/Info.plist;
@@ -511,6 +568,7 @@
 		};
 		AE01CC581C52E12E002DB102 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB54EE43C8D1ACB6B33B8680 /* Pods-Swedar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Swedar/Info.plist;
@@ -525,7 +583,10 @@
 			baseConfigurationReference = 540EF19A8584985CC52982A4 /* Pods-SwedarTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				HEADER_SEARCH_PATHS = $DERIVED_FILE_DIR/../../Swedar.build/DerivedSources;
+				HEADER_SEARCH_PATHS = (
+					$DERIVED_FILE_DIR/../../Swedar.build/DerivedSources,
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = SwedarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.pivotal.SwedarTests;
@@ -540,7 +601,10 @@
 			baseConfigurationReference = 6F62021CAAC7F95DA1908125 /* Pods-SwedarTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				HEADER_SEARCH_PATHS = $DERIVED_FILE_DIR/../../Swedar.build/DerivedSources;
+				HEADER_SEARCH_PATHS = (
+					$DERIVED_FILE_DIR/../../Swedar.build/DerivedSources,
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = SwedarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.pivotal.SwedarTests;

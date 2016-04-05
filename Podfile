@@ -5,10 +5,11 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'Swedar' do
-
+  pod 'RealmSwift'
 end
 
 target 'SwedarTests' do
+  pod 'RealmSwift'
   pod "Cedar", git: "https://github.com/pivotal/cedar"
   pod "Nimble", git: "https://github.com/Quick/Nimble"
   pod "PivotalCoreKit/Development", git: "https://github.com/pivotal/PivotalCoreKit"

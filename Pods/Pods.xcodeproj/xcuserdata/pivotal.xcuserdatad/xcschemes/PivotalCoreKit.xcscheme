@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'BA7B8C8ABFE5D92E140BD430'
+               BlueprintIdentifier = '129994DDF758B8E0AF6A536F'
                BlueprintName = 'PivotalCoreKit'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'PivotalCoreKit.framework'>
