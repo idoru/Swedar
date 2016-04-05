@@ -11,6 +11,9 @@
 		AE01CC3D1C52E12E002DB102 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE01CC3C1C52E12E002DB102 /* AppDelegate.swift */; };
 		AE01CC441C52E12E002DB102 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE01CC431C52E12E002DB102 /* Assets.xcassets */; };
 		AE01CC471C52E12E002DB102 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE01CC451C52E12E002DB102 /* LaunchScreen.storyboard */; };
+		AE3783311CB4194400BE355F /* RealmColorRepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3783301CB4194400BE355F /* RealmColorRepositorySpec.swift */; };
+		AE3783331CB41B8C00BE355F /* RealmColorRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3783321CB41B8C00BE355F /* RealmColorRepository.swift */; };
+		AE3783351CB441B500BE355F /* RealmColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3783341CB441B500BE355F /* RealmColor.swift */; };
 		AE3EDEBA1C93600D0019D201 /* Swedar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE3EDEB81C93600D0019D201 /* Swedar.xcdatamodeld */; };
 		AECDFA2E1C63C7BA006A1526 /* AppDelegateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECDFA2D1C63C7BA006A1526 /* AppDelegateSpec.swift */; };
 		AEE2A1F91C937C1E008FA5E5 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE2A1F71C937C1E008FA5E5 /* Color.swift */; };
@@ -53,6 +56,9 @@
 		AE01CC481C52E12E002DB102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE01CC4D1C52E12E002DB102 /* SwedarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwedarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE01CC531C52E12E002DB102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE3783301CB4194400BE355F /* RealmColorRepositorySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmColorRepositorySpec.swift; sourceTree = "<group>"; };
+		AE3783321CB41B8C00BE355F /* RealmColorRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmColorRepository.swift; sourceTree = "<group>"; };
+		AE3783341CB441B500BE355F /* RealmColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmColor.swift; sourceTree = "<group>"; };
 		AE3EDEB91C93600D0019D201 /* Swedar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Swedar.xcdatamodel; sourceTree = "<group>"; };
 		AECDFA2D1C63C7BA006A1526 /* AppDelegateSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateSpec.swift; sourceTree = "<group>"; };
 		AEE2A1F71C937C1E008FA5E5 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -165,6 +171,7 @@
 			children = (
 				AEE2A1F71C937C1E008FA5E5 /* Color.swift */,
 				AEE2A1F81C937C1E008FA5E5 /* Color+CoreDataProperties.swift */,
+				AE3783341CB441B500BE355F /* RealmColor.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -176,6 +183,7 @@
 				AEE2A1FC1C937C36008FA5E5 /* CoreDataColorRepository.swift */,
 				AEE2A1FD1C937C36008FA5E5 /* CoreDataManager.swift */,
 				AEE2A1FE1C937C36008FA5E5 /* SQLLiteCoreDataManager.swift */,
+				AE3783321CB41B8C00BE355F /* RealmColorRepository.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -211,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				AEE2A20D1C937CAA008FA5E5 /* CoreDataColorRepositorySpec.swift */,
+				AE3783301CB4194400BE355F /* RealmColorRepositorySpec.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -428,6 +437,8 @@
 				AEE2A1F91C937C1E008FA5E5 /* Color.swift in Sources */,
 				AEE2A20A1C937C52008FA5E5 /* UIColor+RGB.swift in Sources */,
 				AEE2A2071C937C45008FA5E5 /* ColorPickerViewController.swift in Sources */,
+				AE3783331CB41B8C00BE355F /* RealmColorRepository.swift in Sources */,
+				AE3783351CB441B500BE355F /* RealmColor.swift in Sources */,
 				AEE2A1FA1C937C1E008FA5E5 /* Color+CoreDataProperties.swift in Sources */,
 				AEE2A2001C937C36008FA5E5 /* CoreDataColorRepository.swift in Sources */,
 				AEE2A2061C937C45008FA5E5 /* ColorPaletteViewController.swift in Sources */,
@@ -445,6 +456,7 @@
 				AEE2A2171C937CF2008FA5E5 /* InMemoryCoreDataManager.swift in Sources */,
 				AEE2A2121C937CB1008FA5E5 /* ColorPickerViewControllerSpec.swift in Sources */,
 				AECDFA2E1C63C7BA006A1526 /* AppDelegateSpec.swift in Sources */,
+				AE3783311CB4194400BE355F /* RealmColorRepositorySpec.swift in Sources */,
 				AEE2A20E1C937CAA008FA5E5 /* CoreDataColorRepositorySpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

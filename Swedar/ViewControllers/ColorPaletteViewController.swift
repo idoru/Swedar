@@ -4,12 +4,12 @@ class ColorPaletteViewController: UICollectionViewController, ColorPickerViewCon
     let colorRepository: ColorRepository
 
     required init?(coder aDecoder: NSCoder) {
-        self.colorRepository = CoreDataColorRepository.sharedInstance
+        self.colorRepository = RealmColorRepository.sharedInstance!
         super.init(coder: aDecoder)
     }
 
     convenience init() {
-        self.init(colorRepository: CoreDataColorRepository.sharedInstance)
+        self.init(colorRepository: RealmColorRepository.sharedInstance!)
     }
 
     init(colorRepository: ColorRepository) {
